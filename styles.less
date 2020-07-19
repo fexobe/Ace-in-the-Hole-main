@@ -1,0 +1,68 @@
+// Color variables (appears count calculates by raw css)
+@color0: #ffffff; // Appears 3 times
+@color1: #111111; // Appears 2 times
+@color2: #ff0000; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 100%; // Appears 4 times
+
+
+#header {
+	background-color: @color1;
+	color: @color0;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	margin: 0 auto;
+	min-height: 80px;
+	width: @width0;
+}
+#navigation {
+	background-color: @color2;
+	color: @color0;
+	margin: 0 auto;
+	min-height: 30px;
+	width: @width0;
+}
+ul {
+	background-color: @color2;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+li {
+	float: left;
+	a {
+		color: white;
+		display: block;
+		padding: 14px 16px;
+		text-align: center;
+		text-decoration: none;
+		&:hover {
+			background-color: @color1;
+		}
+	}
+}
+.slideshow {
+	background-color: gray;
+	margin: 0 auto;
+	min-height: 300px;
+	width: @width0;
+}
+.leftcol {
+	background-color: tan;
+	float: left;
+	margin: 0 auto;
+	min-height: 375px;
+	width: 50%;
+}
+#footer {
+	background-color: #050505;
+	clear: both;
+	color: @color0;
+	margin: 0 auto;
+	min-height: 50px;
+	padding-top: 20px;
+	text-align: center;
+	width: @width0;
+}
