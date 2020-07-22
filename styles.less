@@ -7,22 +7,54 @@
 @width0: 100%; // Appears 4 times
 
 
+
+@media only screen and (max-width: 1024px) {
+	main {
+		padding: 0px;
+		margin: 0px;
+		font-size: 90%;
+		font-family:Verdana;
+	}
+	}
+
+
 #header {
-	background-color: @color1;
+	background-color: @color0;
 	color: @color0;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	margin: 0 auto;
-	min-height: 80px;
+	height: 150px;
 	width: @width0;
 }
+
+// Logo styles
+#header img {
+	width: 400px;
+	padding-top: 10px;
+	
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+// Navigation styles
 #navigation {
 	background-color: @color2;
 	color: @color0;
 	margin: 0 auto;
-	min-height: 30px;
+	min-height: 40px;
 	width: @width0;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
 }
+
+
 ul {
 	background-color: @color2;
 	list-style-type: none;
@@ -30,6 +62,7 @@ ul {
 	overflow: hidden;
 	padding: 0;
 }
+
 li {
 	float: left;
 	a {
@@ -43,19 +76,32 @@ li {
 		}
 	}
 }
+
+// slideshow styles
 .slideshow {
-	background-color: gray;
+	background-color: lightgray;
 	margin: 0 auto;
-	min-height: 300px;
+	min-height: 345px;
 	width: @width0;
+	padding: 0;
+	
 }
+
+.slideshow p {
+	padding-left: 5px;
+}
+
+// left column styles
 .leftcol {
-	background-color: tan;
+	background-color: #ffffff;
 	float: left;
 	margin: 0 auto;
 	min-height: 375px;
 	width: 50%;
+	border-style: outset;
 }
+
+// footer styles
 #footer {
 	background-color: #050505;
 	clear: both;
@@ -65,4 +111,17 @@ li {
 	padding-top: 20px;
 	text-align: center;
 	width: @width0;
+}
+
+//mobile styles//
+@media only screen and (min-width: 600px) {
+
+
+}
+
+//tablet styles//
+@media only screen and (min-width: 768px ) {
+
+
+
 }
