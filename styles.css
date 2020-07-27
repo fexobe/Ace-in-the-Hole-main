@@ -1,226 +1,115 @@
-/**
- * Global Reset of all HTML Elements
- *
- * Resetting all of our HTML Elements ensures a smoother
- * visual transition between browsers. If you don't believe me,
- * try temporarily commenting out this block of code, then go
- * and look at Mozilla versus Safari, both good browsers with
- * a good implementation of CSS. The thing is, all browser CSS
- * defaults are different and at the end of the day if visual
- * consistency is what we're shooting for, then we need to
- * make sure we're resetting all spacing elements.
- *
- */
-html,
-body {
-  border: 0;
-  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-div,
-span,
-object,
-iframe,
-img,
-table,
-caption,
-thead,
-tbody,
-tfoot,
-tr,
-tr,
-td,
-article,
-aside,
-canvas,
-details,
-figure,
-hgroup,
-menu,
-nav,
-footer,
-header,
-section,
-summary,
-mark,
-audio,
-video {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-address,
-cit,
-code,
-del,
-dfn,
-em,
-ins,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-b,
-i,
-hr,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-legend,
-label {
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-}
-article,
-aside,
-canvas,
-figure,
-figure img,
-figcaption,
-hgroup,
-footer,
-header,
-nav,
-section,
-audio,
-video {
-  display: block;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-table caption,
-table th,
-table td {
-  text-align: left;
-  vertical-align: middle;
-}
-a img {
-  border: 0;
-}
-:focus {
-  outline: 0;
-}
-@media only screen and (max-width: 1024px) {
-  main {
-    padding: 0px;
-    margin: 0px;
-    font-size: 90%;
-    font-family: Verdana;
-  }
-}
-#header {
+#logo img {
+  width: 200px;
+  padding-left: 15px;
   background-color: #ffffff;
-  color: #ffffff;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  margin: 0 auto;
-  height: 150px;
-  width: 100%;
+  margin-right: 400px;
 }
-#header img {
-  width: 400px;
-  padding-top: 10px;
+nav {
+  display: flex;
+  align-items: center;
+  min-height: 8vh;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.nav-links {
+  display: flex;
 }
-#navigation {
-  background-color: #ff0000;
-  color: #ffffff;
-  margin: 0 auto;
-  min-height: 40px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
+.nav-links li {
+  list-style: none;
+  height: 30px;
 }
-ul {
-  background-color: #ff0000;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-}
-li {
-  float: left;
-}
-li a {
-  color: white;
-  display: block;
-  padding: 14px 16px;
-  text-align: center;
+.nav-links a {
   text-decoration: none;
+  font-size: 15px;
+  padding-right: 60px;
+  color: #111111;
+  display: inline;
 }
-li a:hover {
-  background-color: #111111;
+.nav-links a:hover {
+  color: #111111;
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: #ff0000;
+  margin: 5px;
 }
 .slideshow {
   background-color: lightgray;
-  margin: 0 auto;
-  min-height: 345px;
-  width: 100%;
-  padding: 0;
-}
-.slideshow p {
-  padding-left: 5px;
-  font-size: 1.8em;
-  font-weight: bold;
+  height: 400px;
 }
 .leftcol {
-  background-color: #ffffff;
+  width: 45%;
+  height: 250px;
+  border-right: 2px solid #111111;
   float: left;
-  margin: 0 auto;
-  min-height: 375px;
-  width: 50%;
-  border-right: 1px solid #000;
-}
-h2 {
-  padding: 10px;
 }
 .rightcol {
-  margin: 0 auto;
-  width: 49%;
-  float: right;
+  height: 250px;
 }
 #footer {
-  background-color: #050505;
+  background-color: #111111;
   clear: both;
   color: #ffffff;
   margin: 0 auto;
-  min-height: 50px;
-  padding-top: 20px;
+  min-height: 0px;
+  padding: 20px;
   text-align: center;
   width: 100%;
 }
-@media only screen and (max-width: 600px) {
-  #footer {
-    background-color: blue;
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links a {
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+  }
+  .burger {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(45deg translate(-5px, -6px));
+}
+.toggle .line2 {
+  transform: rotate(45deg translate(-5px, -6px));
+}
+.toggle .line3 {
+  transform: rotate(-45deg translate(-5px, 6px));
 }
