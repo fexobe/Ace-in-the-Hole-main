@@ -10,7 +10,7 @@
 <?php echo file_get_contents("footer.html.php"); ?>
 
     
-<?php echo file_get_contents("styles.php"); ?>
+<?php echo file_get_contents("styles.css"); ?>
 
 
     
