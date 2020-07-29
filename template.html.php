@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Ace in the hole template</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.php">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
   
 <body>
-    <nav>
-    <!--Logo-->
-        <div id="logo">
-            <img src="images/AITHME_red_and_black_on_transparent_Impact.png" alt="ace in the hole logo" class="center">
-        </div>
+
            
-        <header class="header">
-        <?php include 'header.html.php';?>
-        <?php include 'footer.html.php';?>
-        <?php include 'styles.css';?>
-        <?php include 'index.php';?>
-        </header>
-        
+      
  <div class="slideshow">
         <br>
         <p>Slideshow goes here</p>

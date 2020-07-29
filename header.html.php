@@ -3,16 +3,16 @@
 
 <head>
     <title>Ace in the hole template</title>
-    <link rel = "stylesheet" type="text/css" href=
-    styles.php"/>
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
   
-<body>
-           
+    <!--Logo-->
+        <div id="logo">
+            <img src="images/AITHME_red_and_black_on_transparent_Impact.png" alt="ace in the hole logo" class="center">
+        </div> 
     <header class="header">
         <ul class="menu">
             <li>
@@ -23,4 +23,3 @@
             </li>
         </ul>
     </header>
-</html>
