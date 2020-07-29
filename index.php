@@ -2,7 +2,7 @@
 
 
  
-<?php echo file_get_contents("template.html.php"); ?>
+<?php echo file_get_contents("template.html"); ?>
 
 
 
