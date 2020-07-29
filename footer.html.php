@@ -1,5 +1,9 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<body>
 
-echo   "<footer">Copyright &copy; 2020 Alisha Jacobs</footer>";
+</body>
 
-?>
+<footer">Copyright &copy; 2020 Alisha Jacobs</footer>
+</html>
+
