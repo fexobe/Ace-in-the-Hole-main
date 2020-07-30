@@ -14,12 +14,14 @@
             <img src="images/AITHME_red_and_black_on_transparent_Impact.png" alt="ace in the hole logo" class="center">
         </div> 
     <header class="header">
-        <ul class="menu">
-            <li>
-                <a href="#">Home</a>
-                <a href="#">Event Information</a>
-                <a href="#">Registration</a>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li>
+            <a href="#">Home</a>
+            <a href="#">Information</a>
+            <a href="#">Registration</a>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
     </header>

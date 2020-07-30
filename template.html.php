@@ -1,8 +1,7 @@
   
 <body>
 
-           
-      
+    
  <div class="slideshow">
         <br>
         <p>Slideshow goes here</p>
@@ -17,7 +16,7 @@
 
 </body>
 
-</div>
+
 
 </html>
     
