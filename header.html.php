@@ -17,11 +17,15 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
+        <nav>
+
         <li>
             <a href="#">Home</a>
             <a href="#">Information</a>
             <a href="#">Registration</a>
             <a href="#">Contact</a>
         </li>
+
+        </nav>
     </ul>
     </header>

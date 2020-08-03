@@ -1,13 +1,11 @@
-<?php echo file_get_contents("header.html.php"); ?>
+<?php include 'header.html.php'; ?>
 
 
  
-<?php echo file_get_contents("template.html.php"); ?>
+<?php include 'template.html.php';?>
 
 
-
-
-<?php echo file_get_contents("footer.html.php"); ?>
+<?php include 'footer.html.php';?>
 
     
 
