@@ -1,4 +1,4 @@
-  
+
 <body>
 
     
@@ -12,7 +12,6 @@
     <div class="rightcol">
         <h2>Social media will be here</h2>
 </div>
-
 
 </body>
 
