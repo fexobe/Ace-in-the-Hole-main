@@ -21,9 +21,9 @@
 
         <li>
             <a href="index.php">Home</a>
-            <a href="#">Information</a>
+            <a href="information.html.php">Information</a>
             <a href="register.html.php">Registration</a>
-            <a href="#">Contact</a>
+            <a href="contact_form.html.php">Contact</a>
         </li>
 
         </nav>
