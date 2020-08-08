@@ -20,7 +20,7 @@
         <nav>
 
         <li>
-            <a href="#">Home</a>
+            <a href="index.php">Home</a>
             <a href="#">Information</a>
             <a href="register.html.php">Registration</a>
             <a href="#">Contact</a>
