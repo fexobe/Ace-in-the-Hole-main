@@ -22,7 +22,7 @@
         <li>
             <a href="#">Home</a>
             <a href="#">Information</a>
-            <a href="#">Registration</a>
+            <a href="register.html.php">Registration</a>
             <a href="#">Contact</a>
         </li>
 
