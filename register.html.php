@@ -5,9 +5,9 @@
 
           <form class="registration" action="register.html.php" method="post">
 
-            <input type="text" id="name" name="name" placeholder="Full name.."><br><br>
+            <input type="text" id="name" name="name" placeholder="Full name.." required><br><br>
 
-            <input type="text" id="age" name="age" placeholder="age.."><br><br>
+            <input type="text" id="age" name="age" placeholder="age.." required><br><br>
             
             <label for="role">*Role:</label><br><br>
           <select size="1" name="role" id="role">
@@ -18,13 +18,13 @@
 <br>
 <br>
 
-            <input type="text" id="phone" name="phone" placeholder="Phone Number.."><br><br>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number.." required><br><br>
 
-            <input type="text" id="email" name="email" placeholder="Email Address.."><br><br>
+            <input type="text" id="email" name="email" placeholder="Email Address.." required ><br><br>
 
-            <input type="text" id="emergency" name="emergency" placeholder="Emergency Contact Name.."><br><br>
+            <input type="text" id="emergency" name="emergency" placeholder="Emergency Contact Name.."required><br><br>
 
-            <input type="text" id="" name="contact" placeholder="Emergency Contact Phone Number.."><br><br>
+            <input type="text" id="" name="contact" placeholder="Emergency Contact Phone Number.." required><br><br>
 
             <label for="gender">*Gender:</label><br><br>
             <select size="1" name="gender" id="gender">
@@ -75,7 +75,7 @@
           <br>
             <label for="special">*Special accomidations needed:</label><br><br>
             <textarea id="special" name="special" rows="6" cols="70">
-            Special accommidations
+          
             </textarea>
 
             <br>
