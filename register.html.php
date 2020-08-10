@@ -3,7 +3,7 @@
         <main>
           <h1>Registration Form</h1>
 
-          <form class="registration" action="register_form.php" method="post">
+          <form class="registration" action="register.html.php" method="post">
 
             <input type="text" id="name" name="name" placeholder="Full name.."><br><br>
 
@@ -24,7 +24,7 @@
 
             <input type="text" id="emergency" name="emergency" placeholder="Emergency Contact Name.."><br><br>
 
-            <input type="text" id="contact" name="contact" placeholder="Emergency Contact Phone Number.."><br><br>
+            <input type="text" id="" name="contact" placeholder="Emergency Contact Phone Number.."><br><br>
 
             <label for="gender">*Gender:</label><br><br>
             <select size="1" name="gender" id="gender">
@@ -72,7 +72,8 @@
             <br>
             <br>
           
-
+          <br>
+            <label for="special">*Special accomidations needed:</label><br><br>
             <textarea id="special" name="special" rows="6" cols="70">
             Special accommidations
             </textarea>
@@ -87,14 +88,51 @@
             <br>
             <br>
             
-            
-
-            
-            
             <Button type="submit" name="submit">Submit form</Button>
             <br>
       
           </form>
+
+          <?php
+
+              if (isset($_POST['submit'])) { 
+                $name = $_POST['name']; 
+                $age = $_POST['age'];
+                $role = $_POST['role'];
+                $phone = $_POST['phone'];
+                $email = $_POST['email'];
+                $emergency = $_POST['emergency'];
+                $contact = $_POST['contact'];
+                $gender = $_POST['gender'];
+                $tshirt = $_POST['tshirt'];
+                $saturday = $_POST['saturday'];
+                $sunday = $_POST['sunday'];
+                $special = $_POST['special'];
+
+
+                $sql = "INSERT INTO registration (name, age, role, phone, email, emergency, contact, gender, tshirt, saturday, sunday, special) VALUES ('{$name}', '{$age}','{$role}','{$phone}','{$email}','{$emergency}','{$contact}','{$gender}','{$tshirt}', '{$saturday}','{$sunday}','{$special}')";
+                
+                require_once 'dbconfig.php';
+
+                $conn = mysqli_connect($host, $username, $password, $dbname);
+                // Check connection
+               if (!$conn) {
+                   die("Connection failed: " . mysqli_connect_error());
+                }
+
+                if (mysqli_query($conn, $sql)) {
+                  echo "New record created successfully";
+                } else {
+                  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                
+                mysqli_close($conn);
+          
+                $conn = null;
+              }
+
+          ?>
+
         </main>
         <?php include 'footer.html.php';?>
     </body>
