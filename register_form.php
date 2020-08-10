@@ -1,14 +1,13 @@
 <?php
 
 $servername = "localhost";
-$username = "XXXX";
+$username = "root";
 $password = "XXXXX";
-$dbname = "instruct_registerform";
+$dbname = "ace in the hole";
 $users_name = $_POST['name'];
 $users_email = $_POST['email'];
 $users_website = $_POST['phone'];
 $users_comment = $_POST['house'];
-$users_comment = $_POST['street'];
 $users_comment = $_POST['street'];
 $users_comment = $_POST['city'];
 $users_comment = $_POST['state'];
