@@ -18,6 +18,7 @@
             <option>Select an role</option>
             <option value="athlete">Athlete</option>
             <option value="volunteer">Volunteer</option>
+            <option value="Interested Party">Interested Party</option>
          </select>
             <br>
             <br>
