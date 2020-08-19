@@ -1,7 +1,7 @@
 <?php include 'header.html.php'; ?>
 
 <body>
-    <main>
+    <main class="contact">
         <h1>Contact Us</h1>
         <p>We usually respond within two business days</p>
 
