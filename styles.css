@@ -116,8 +116,8 @@ body {
   font-family: 'Droid Serif', serif;
   background-color: #ffffff;
 }
-main {
-  height: 1000px;
+.home {
+  height: auto;
 }
 * {
   box-sizing: border-box;
@@ -260,9 +260,6 @@ footer {
   font-style: italic;
   clear: both;
 }
-main {
-  margin: 15px;
-}
 h1 {
   font-size: 2em;
 }
@@ -296,6 +293,7 @@ h1 {
 }
 .reg {
   padding-left: 20px;
+  height: auto;
 }
 .reg h3 {
   padding-bottom: 20px;
@@ -306,6 +304,7 @@ h1 {
 }
 .cost {
   padding-left: 20px;
+  padding-bottom: 10px;
 }
 .cost h3 {
   padding-top: 20px;
@@ -347,6 +346,9 @@ button {
   margin-left: 20px;
   background-color: #ff0000;
   color: #ffffff;
+}
+.contact {
+  height: auto;
 }
 @media only screen and (min-width: 900px) {
   .header {
@@ -405,6 +407,7 @@ button {
   }
   footer {
     background-color: #111111;
+    clear: both;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -459,7 +462,57 @@ button {
   .header .menu-icon {
     display: block;
   }
+  .leftcol {
+    width: 500px;
+    height: 260px;
+    border-right: none;
+    float: left;
+  }
+  .rightcol {
+    width: 490px;
+    margin: auto;
+    height: auto;
+    padding: auto;
+  }
+  .rightcol h3 {
+    display: none;
+  }
+  .rightcol .fb-page {
+    width: 300px;
+    padding-top: 20px;
+  }
+  .rightcol .twitter-timeline {
+    width: 300px;
+  }
+  .information {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .registration {
+    height: auto;
+  }
+  .registration input {
+    width: 300px;
+  }
+  textarea {
+    height: 300px;
+    width: 300px;
+    padding-bottom: 10px;
+  }
+  button {
+    padding-bottom: 10px;
+  }
+  .contact input {
+    width: 300px;
+  }
+  .home {
+    height: auto;
+  }
+  .home .rightcol .iframe {
+    width: 300px;
+  }
   footer {
-    background-color: #111111;
+    padding-top: 10px;
+    clear: both;
   }
 }
