@@ -1,6 +1,6 @@
 <?php include 'header.html.php'; ?>
     <body>
-        <main>
+        <main class="reg">
           <h1>Registration Form</h1>
 
           <form class="registration" action="register.html.php" method="post">
