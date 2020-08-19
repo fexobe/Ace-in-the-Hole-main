@@ -1,6 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ace in the hole</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+
+
 <?php include 'header.html.php'; ?>
     <body>
-        <main>
+        <main class="information">
             <h1>Event Information Page</h1>
 
             <div class="bring">
@@ -74,6 +87,9 @@
                             <li>Post-event party & entertainment</li>
                     </ul>
                 </div>
+
+                
 </main>
 <?php include 'footer.html.php';?>
 </body>
+</html>
