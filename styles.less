@@ -156,8 +156,8 @@ body {
 	background-color: @color0;
 }
 
-main{
-	height: 1000px;
+.home{
+	height: auto;
 }
 
 //slideshow//
@@ -272,6 +272,7 @@ a {
 
   //Columns//
 
+ 
   .leftcol {
 	width: 40%;
 	height: 500px;
@@ -305,7 +306,7 @@ a {
 	text-decoration: underline;
 	padding-bottom: 20px;
 }
- 
+
 //footer styles//
 
 footer {
@@ -320,10 +321,7 @@ footer {
 }
 
 //Information styles//
-	
-main {
-	margin: 15px;
-}
+
 
 h1 {
 	font-size: 2em;
@@ -371,6 +369,7 @@ h1 {
 
 .reg {
 	padding-left: 20px;
+	height: auto;
 }
 
 .reg h3 {
@@ -386,6 +385,7 @@ h1 {
 
 .cost {
 	padding-left: 20px;
+	padding-bottom: 10px;
 }
 
 .cost h3 {
@@ -444,6 +444,9 @@ button {
 
 //Contact styles//
 
+.contact{
+	height: auto;
+}
 
 
 //tablet//
@@ -514,6 +517,7 @@ button {
 
 footer {
 	background-color: @color1;
+	clear: both;
 }
 }
 
@@ -523,7 +527,7 @@ footer {
 //mobile styles //
 @media only screen and (max-width: 600px) {
 	.header {
-		background-color: #fff;
+	background-color: #fff;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	width: 100%;
 	z-index: 3;
@@ -584,7 +588,81 @@ footer {
 	display: block;
 }
 
-footer {
-	background-color: @color1;
+
+
+.leftcol{
+	width: 500px;
+	height: 260px;
+	border-right: none;
+	float: left;
+	
+}
+
+.rightcol{
+	width: 490px;
+	margin: auto;
+	height: auto;
+	padding: auto;
+	
+}
+
+.rightcol h3{
+	display: none;
+}
+
+.rightcol .fb-page{
+	width: 300px;
+	padding-top: 20px;
+}
+
+.rightcol .twitter-timeline{
+	width: 300px;
+}
+
+
+//information page//
+.information{
+	height: auto;
+	padding-bottom: 20px;
+}
+
+//registration page//
+.registration{
+	height: auto;
+}
+
+.registration input{
+	width: 300px;
+}
+
+textarea{
+	height: 300px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+
+button{
+	padding-bottom: 10px;
+}
+
+//contact page//
+
+.contact input{
+	width: 300px;
+}
+
+//home page//
+
+.home{
+	height: auto;
+}
+
+.home .rightcol .iframe{
+	width: 300px;
+}
+
+footer{
+	padding-top: 10px;
+	clear: both;
 }
 }
