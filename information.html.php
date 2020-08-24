@@ -14,6 +14,8 @@
 <?php include 'header.html.php'; ?>
     <body>
         <main class="information">
+
+        <img src="images/ace18.jpg" alt="road">
             <h1>Event Information Page</h1>
 
             <div class="bring">
