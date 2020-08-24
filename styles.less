@@ -142,13 +142,6 @@
 	top: 0;
 }
 
-body {
-	margin: 0;
-	font-family: 'Droid Serif', serif;
-	background-color: @color0;
-}
-
-
 //Template styles//
 
 * {
@@ -157,22 +150,12 @@ body {
 	box-sizing: border-box;
 }
 
-
-.home{
-	height: auto;
-}
-
-//slideshow//
-
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
+	position: relative;
+	margin: auto;
+	display: auto;
+  }
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -273,11 +256,12 @@ body {
 
  
   .leftcol {
-	width: 40%;
+	width: 50%;
 	height: 500px;
 	float: left;
 	border-right: 1px solid @color1;
-	padding-left: 10px;
+	padding-left: 5px;
+	
 }
 
 .leftcol h3 {
@@ -289,24 +273,34 @@ body {
 }
 
 .leftcol img {
-	width: 450px;
-	padding-left: 55px;
-	padding-top: 40px;
-	padding-bottom: 0;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+
 }
 
 .rightcol {
 	height: auto;
-	width: 53%;
+	width: 60%;
 	float: left;
-	padding-left: 75px;
 	
-
 }
 
-.rightcol h3{
-	text-decoration: underline;
-	padding-bottom: 20px;
+ h3{
+	padding: 10px 30px 30px 30px;
+}
+
+
+.fb-page{
+	width: 380px;	
+	padding-left: 30px;
+}
+
+.twitterdesktop{
+	width: 380px;
+	height: auto;
+	float: right;
 }
 
 //footer styles//
@@ -371,9 +365,10 @@ h1 {
 //registration information styles//
 
 .reg {
-	padding-left: 20px;
+	
 	height: auto;
 }
+
 
 .reg h3 {
 	padding-bottom: 20px;
@@ -415,6 +410,12 @@ h1 {
 	margin: 40px;
 }
 
+.reg img{
+	width: 100%;
+	height: auto;
+	padding-left: 0;
+}
+
 input {
 	width: 500px;
 	height: 30px;
@@ -448,11 +449,17 @@ button {
 	height: auto;
 }
 
+.contact img{
+	width: 100%;
+	height: auto;
+	padding-left: 0;
+}
 
 //tablet//
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 601px) {
+	
 	.header {
-		background-color: #fff;
+	background-color: #fff;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	width: 100%;
 	z-index: 3;
@@ -515,6 +522,9 @@ button {
 	color: @color0;
 }
 
+
+//footer//
+
 footer {
 	background-color: @color1;
 	clear: both;
@@ -522,11 +532,16 @@ footer {
 }
 
 //mobile styles //
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
 	body{
 		height: auto;
-		max-width: 400px;
+		max-width: 500px;
+	}
+
+	#wrapper{
+		max-width: 500px;
+		
 	}
 	.header {
 	background-color: #fff;
@@ -552,7 +567,10 @@ footer {
 }
 
 #logo img {
-	max-width: 400px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
 }
 
 .center {
@@ -591,25 +609,26 @@ footer {
 	float: left;
 }
 
-
+.about p{
+	padding-right: 20px;
+	font-size: 1.2em;
+}
 
 .leftcol{
 	width: 500px;
 	height: 260px;
-	border-right: none;
 	float: left;
+	border: none;
 	
 }
 
 .leftcol img{
-	width: 369px;
-	padding-left: 66px;
+	width: 300px;
+	padding-left: 30px;
 	
 }
 
-.leftcol h3{
-	padding-left: 65px;
-}
+
 .rightcol{
 	width: 490px;
 	margin: auto;
@@ -618,21 +637,43 @@ footer {
 	
 }
 
-.rightcol h3{
-	padding-top: 30px;
+h3{
+	padding: 30px 30px 30px 30px;
 	
 }
 
-.rightcol .fb-page{
-	width: 300px;
-	padding-top: 20px;
-	padding-bottom: 40px;
+.slideshow-container{
+	max-width: 500px;
+
 }
 
-.rightcol .twitter-timeline{
+.myslides{
+	max-width: 500px;
+}
+
+.fb-page{
 	width: 300px;
 	padding-top: 20px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	
 }
+
+.twitterdesktop{
+	width: 300px;
+	padding-top: 20px;
+	padding-left: 40px;
+	float: none;
+}
+
+
+footer{
+	max-width: 100%;
+	padding-top: 10px;
+	text-align: left;
+	clear: both;
+}
+
 
 
 //information page//
@@ -642,12 +683,11 @@ footer {
 }
 
 //registration page//
-.registration{
-	height: auto;
-}
+
 
 .registration input{
 	width: 300px;
+	padding-right: 10px;
 }
 
 textarea{
@@ -660,25 +700,20 @@ button{
 	padding-bottom: 10px;
 }
 
+
+
 //contact page//
 
 .contact input{
 	width: 300px;
+	padding-right: 10px;
 }
 
 .contact {
 	height: auto;
-}
 
-//home page//
-
-
-.home .rightcol .iframe{
-	width: 300px;
-}
-
-footer{
-	padding-top: 10px;
-	clear: both;
+.contact img{
+	width: 100%;
+}	
 }
 }
