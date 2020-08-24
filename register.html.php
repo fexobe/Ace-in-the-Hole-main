@@ -1,7 +1,19 @@
 <?php include 'header.html.php'; ?>
-    <body>
-        <main class="reg">
-          <h1>Registration Form</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>    
+<main class="reg">
+         
+   <img src="images/ace3.jpg" alt="bike riders">
+
+<h1>Registration Form</h1>
 
           <form class="registration" action="register.html.php" method="post">
 
@@ -20,18 +32,18 @@
 
             <input type="text" id="phone" name="phone" placeholder="Phone Number.." required><br><br>
 
-            <input type="text" id="email" name="email" placeholder="Email Address.." required ><br><br>
+            <input type="text" id="email" name="email" placeholder="Email Address.." required><br><br>
 
-            <input type="text" id="emergency" name="emergency" placeholder="Emergency Contact Name.."required><br><br>
+            <input type="text" id="emergency-contact" name="emergency" placeholder="Emergency Contact Name.." required><br><br>
 
-            <input type="text" id="" name="contact" placeholder="Emergency Contact Phone Number.." required><br><br>
+            <input type="text" id="contact" name="contact us" placeholder="Emergency Contact Phone Number.." required><br><br>
 
             <label for="gender">*Gender:</label><br><br>
             <select size="1" name="gender" id="gender">
               <option>Select an gender</option>
               <option value="female">Female</option>
               <option value="male">Male</option>
-              <option value="other">Non-binary/Other</options>
+              <option value="other">Non-binary/Other</option>
            </select>
 
         <br>
@@ -44,7 +56,7 @@
               <option value="small">Small</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
-              <option value="extra-large">Extra Large</options>
+              <option value="extra-large">Extra Large</option>
             </select>
         <br>
         <br>
@@ -135,4 +147,5 @@
 
         </main>
         <?php include 'footer.html.php';?>
-    </body>
+            </body>
+            </html>
