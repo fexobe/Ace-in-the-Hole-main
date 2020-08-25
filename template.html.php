@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
+
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="5ynWOowV"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<div id="wrapper">
-  <main>
+<body>
+<main>
     
 <div class="slideshow-container">
   <!-- Full-width images with number and caption text -->
