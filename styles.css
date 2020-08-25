@@ -210,11 +210,10 @@
   font-weight: normal;
 }
 .leftcol {
-  width: 50%;
+  width: 40%;
   height: 500px;
   float: left;
   border-right: 1px solid #111111;
-  padding-left: 5px;
 }
 .leftcol h3 {
   text-align: left;
@@ -226,7 +225,7 @@
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
+  padding-left: 50px;
 }
 .rightcol {
   height: auto;
@@ -359,7 +358,11 @@ button {
   height: auto;
   padding-left: 0;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (device-width: 768px) {
+  body {
+    max-width: 768px;
+    height: 900px;
+  }
   .header {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -414,7 +417,36 @@ button {
     text-decoration: none;
     color: #ffffff;
   }
+  .leftcol img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .leftcol {
+    border: none;
+    width: 500px;
+    margin: 10px;
+    padding-left: 25px;
+    height: 390px;
+  }
+  .rightcol {
+    width: 768px;
+    height: 900px;
+    padding-left: 50px;
+    margin: auto;
+  }
+  .fb-page {
+    width: 400px;
+  }
+  .twitterdesktop {
+    width: 400px;
+    padding-top: 30px;
+    padding-right: 0;
+    float: none;
+    height: auto;
+  }
   footer {
+    height: 30px;
     background-color: #111111;
     clear: both;
   }
